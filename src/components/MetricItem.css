@@ -1,0 +1,66 @@
+.metric-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #21B6A8;
+    border-radius: 20px;
+    margin: 0.5rem 1rem;
+}
+
+.metric-item__meal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.metric-item__date{
+    padding: 0 1rem;
+}
+
+.metric-item h3 {
+    font-size: 1rem;
+    flex: 1;
+    color: #116530;    ;
+    margin: 0px;
+}
+.metric-item h4 {
+    font-size: 1rem;
+    flex: 1;
+    color: white;
+    margin: 0px;
+    align-items:end;
+
+}
+
+.metric-item__calories {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #A3EBB1;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin:0 1rem;
+}
+
+@media (min-width: 580px) {
+    .metric-item__meal {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .metric-item h3, h4{
+        font-size: 1.25rem;
+    }
+
+    .metric-item__calories {
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
