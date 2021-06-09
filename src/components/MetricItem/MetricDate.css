@@ -1,0 +1,8 @@
+.metric-item__date {
+    font-size: 1rem;
+    color: white;
+    background-color: #1f6d1d;
+    padding: 0.5rem;
+    border-radius: 6px;
+    /* margin-right: 1rem; */
+}
