@@ -1,0 +1,38 @@
+.add-item__elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  label{
+    font-weight: bold;
+  }
+  select{
+    height: 40px;
+    
+}
+  .add-item__element label {
+    font-weight: bold;
+    margin-bottom: 0rem;
+    display: block;
+  }
+  
+  .add-item__element input, select{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 20rem;
+  }
+  .add-item__actions{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .add-item__actions button{
+    cursor: pointer;
+    border: 3px solid #8b20a0;
+    border-radius: 8px;
+}

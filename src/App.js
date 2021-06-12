@@ -1,11 +1,11 @@
 // import "./App.css"
-import Metrics from "./components/MetricItem/Metrics"
-import FilterMetrics from "./components/FilterMetrics/FilterMetrics"
+import Items from "./components/ItemsList/Items"
+import FilterItems from "./components/FilterItems/FilterItems"
 import { useState } from "react"
+import AddItem from "./components/EditItem/AddItem";
+import NavBar from "./components/NavBar/NavBar";
 
-
-
-const metrics = [
+const startupItems = [
   {
     id: 1,
     date: new Date(2021, 6, 8, 8, 10, 0, 0),
@@ -45,8 +45,17 @@ const metrics = [
 
 
 function App() {
+  const [items, setItems] = useState(startupItems)
+
   const [startDate, setStartDate] = useState("")
 
+ const addedItemHandler = (item) => {
+    console.log("someone gave me a new metric to add", item)
+    // we use the previous state so DO NOT USE THE SIMPLE setMetrics!!!
+    // setMetrics([...metrics, metric ]);
+    // Instead use the setMetrics that knows about the previous state
+    setItems((prevItems)=>{ return [...prevItems, item] });
+  }
 
   const newStartDateSetHandler = (startDate) => {
     console.log("Start date set to ", startDate)
@@ -55,11 +64,12 @@ function App() {
   }
 
   return (
+    
     <div>
-      <h1>Odyssea Calorie Tracker</h1>
-      <h2>Demo List</h2>
-      <FilterMetrics startDate={startDate} onSetStartDate={newStartDateSetHandler} />
-      <Metrics filterDate={startDate}  data={metrics} />
+      <NavBar/>
+      <AddItem onAddItem={addedItemHandler}/>
+      <FilterItems startDate={startDate} onSetStartDate={newStartDateSetHandler} />
+      <Items filterDate={startDate}  data={items} />
 
     </div>
 

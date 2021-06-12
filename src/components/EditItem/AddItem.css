@@ -1,0 +1,33 @@
+.add-item {
+    background-color:#A3EBB1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  
+  .add-item button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+  
+  .add-item button:hover,
+  .add-item button:active {
+    background-color: #f3ae80;
+  }
+  
+  /* .add-metric button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+   */
+   
+  /* .add-metric button.alternative:hover,
+  .add-metric button.alternative:active {
+    background-color: #ff7b25;
+  } */

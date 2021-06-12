@@ -1,7 +1,7 @@
-import "./FilterMetrics.css"
+import "./FilterItems.css"
 
 
-const FilterMetrics = (props) => {
+const FilterItems = (props) => {
 
     const startDateChangeHandler = (event) => {
         let newStartDate = event.target.value
@@ -10,12 +10,12 @@ const FilterMetrics = (props) => {
     }
 
     return (
-        <div className="filter-metrics">
-            <div className="filter-metrics__elements">
-                <div className="filter-metrics__element">
-                    <p>Filter the metrics</p>
+        <div className="filter-items">
+            <div className="filter-items__elements">
+                <div className="filter-items__element">
+                    <p>Filter the items</p>
                 </div>
-                <div className="filter-metrics__element">
+                <div className="filter-items__element">
                     <label>Start on</label>
                     <input type="date" value={props.startDate} onChange={startDateChangeHandler}/>
                 </div>
@@ -24,4 +24,4 @@ const FilterMetrics = (props) => {
     )
 }
 
-export default FilterMetrics 
+export default FilterItems 

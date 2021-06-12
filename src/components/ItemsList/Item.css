@@ -1,4 +1,4 @@
-.metric-item {
+.item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@
     margin: 0.5rem 1rem;
 }
 
-.metric-item__meal {
+.item__meal {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -18,17 +18,17 @@
     flex: 1;
 }
 
-.metric-item__date{
+.item__date{
     padding: 0 1rem;
 }
 
-.metric-item h3 {
+.item h3 {
     font-size: 1rem;
     flex: 1;
     color: #116530;    ;
     margin: 0px;
 }
-.metric-item h4 {
+.item h4 {
     font-size: 1rem;
     flex: 1;
     color: white;
@@ -37,7 +37,7 @@
 
 }
 
-.metric-item__calories {
+.item__calories {
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -48,18 +48,18 @@
 }
 
 @media (min-width: 580px) {
-    .metric-item__meal {
+    .item__meal {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         flex: 1;
     }
 
-    .metric-item h3, h4{
+    .item h3, h4{
         font-size: 1.25rem;
     }
 
-    .metric-item__calories {
+    .item__calories {
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem;
     }

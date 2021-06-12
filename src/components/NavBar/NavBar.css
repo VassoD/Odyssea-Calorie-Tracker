@@ -1,0 +1,12 @@
+.nav_bar{
+    background-color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+}
+
+h1{
+    font-size: 32px;
+    color: #116530;
+    text-align: center;
+    font-weight: 800;
+    margin:0;
+  }

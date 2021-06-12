@@ -2,22 +2,20 @@
 
 html {
   font-family: 'Nunito', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1535227798054-e4373ef3795a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80");
+  background-repeat: no-repeat;
 }
 
 body {
   margin: 0;
-  background-color: #c6ffec;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
-h1{
-  color: #116530;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 800;
-}
+
 h2{
   color: #143d23;
   text-align: center;
 }
+

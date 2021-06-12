@@ -1,9 +1,9 @@
-import "./Metrics.css"
-import MetricsList from "./MetricsList.js"
+import "./Items.css"
+import ItemsList from "./ItemsList.js"
 import Card from "../UI/Card"
 
-const Metrics = (props) => {
-    console.log("filtering on", props.filterDate)
+const Items = (props) => {
+    // console.log("filtering on", props.filterDate)
     const date = new Date(props.filterDate)
 
     const filteredItems = props.data.filter( item => {
@@ -14,10 +14,10 @@ const Metrics = (props) => {
     })
 
     return (
-        <Card className="metrics">
-            <MetricsList data={filteredItems}/>
+        <Card className="items">
+            <ItemsList data={filteredItems}/>
         </Card>
     )
 }
 
-export default Metrics
+export default Items
