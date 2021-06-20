@@ -7,6 +7,7 @@ const ItemsDate = (props) => {
     return (
         <div className="item__date">{dispDate}</div>
         );
+        
 }
 
 export default ItemsDate

@@ -5,6 +5,7 @@ const Input = (props) => {
         <div className={props.className}>
             <label htmlFor={props.input.id}>{props.labelText}</label>
             <input {...props.input} />
+            {/* {props.children} */}
         </div>
     )
 }

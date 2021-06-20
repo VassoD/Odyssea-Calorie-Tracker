@@ -9,6 +9,15 @@ const FilterItems = (props) => {
         props.onSetStartDate(newStartDate)
     }
 
+
+     const userTypeChangeHandler = (event) => {
+            let newUserType = event.target.value
+            console.log(newUserType)
+            props.onSetUserType(newUserType)
+        }
+    
+    
+
     return (
         <div className="filter-items">
             <div className="filter-items__elements">
@@ -16,11 +25,21 @@ const FilterItems = (props) => {
                     <p>Filter the items</p>
                 </div>
                 <div className="filter-items__element">
-                    <label>Start on</label>
+                <label>Type:</label>
+                <select value={props.userType} onChange={userTypeChangeHandler}>
+                    <option>Select meal type</option>
+                    <option>Breakfast</option>
+                    <option>Brunch</option>
+                    <option>Lunch</option>
+                    <option>Snack</option>
+                    <option>Dinner</option>
+                </select>
+                 <label>Start on</label>
                     <input type="date" value={props.startDate} onChange={startDateChangeHandler}/>
                 </div>
             </div>
         </div>
+        
     )
 }
 

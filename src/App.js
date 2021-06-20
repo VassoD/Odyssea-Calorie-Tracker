@@ -49,6 +49,8 @@ function App() {
 
   const [startDate, setStartDate] = useState("")
 
+  const [userType, setUserType] = useState("")
+
  const addedItemHandler = (item) => {
     console.log("someone gave me a new metric to add", item)
     // we use the previous state so DO NOT USE THE SIMPLE setMetrics!!!
@@ -63,14 +65,22 @@ function App() {
 
   }
 
+  const newUserTypeSetHandler = (userType) => {
+    console.log("Type set to ", userType)
+    setUserType(userType);
+
+  }
+
   return (
     
     <div>
       <NavBar/>
       <AddItem onAddItem={addedItemHandler}/>
-      <FilterItems startDate={startDate} onSetStartDate={newStartDateSetHandler} />
+      {/* <DeleteItem onDeleteItem={deletedItemHandler}/> */}
+      <FilterItems startDate={startDate} onSetStartDate={newStartDateSetHandler} userType={userType} onSetUserType={newUserTypeSetHandler}/>
+      
       <Items filterDate={startDate}  data={items} />
-
+    
     </div>
 
   );

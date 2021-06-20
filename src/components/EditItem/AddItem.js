@@ -13,6 +13,10 @@ const AddItem = (props) => {
             setError(mandatoryValue + " description " )
             return false;
         }
+        // if (item.date.trim().input ===) {
+        //     setError(mandatoryValue + " date " )
+        //     return false;
+        // }
         if (item.type.trim().length === 0) {
             setError(mandatoryValue + " type " )
             return false;

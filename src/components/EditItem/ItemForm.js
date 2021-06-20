@@ -61,6 +61,8 @@ const ItemForm = (props) => {
         }
     }
 
+
+
     return (
         <form onSubmit={onSubmitHandler}>
             <div className="add-item__elements">

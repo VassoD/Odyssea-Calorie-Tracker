@@ -9,6 +9,7 @@ const ItemsList = (props) => {
     return props.data.map((item) => {
         return <Item key={item.id} calories={item.calories} type={item.type} description={item.description} date={item.date} />
     })
+    
 }
 
 

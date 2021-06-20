@@ -1,9 +1,9 @@
 .error {
-    background: #d49fdf;
+    background: #45796a;
 }
 
 .error__title {
-    background: #8b20a0;
+    background: #45796a;
     padding: 1rem;
 }
 
@@ -26,10 +26,9 @@
 .error__actions button {
     font: inherit;
     cursor: pointer;
-    padding: 1rem 2rem;
-    border: 1px solid #8b20a0;
+    padding: 1rem 3rem;
+    border: 1px solid #45796a;
     background-color: #feb236;
-    border-radius: 8px;
     margin-right: 1rem;
 }
 
@@ -37,5 +36,5 @@
 .error__actions button:active {
     color: #feb236;
     border-color: #feb236;
-    background-color: #8b20a0;
+    background-color: #45796a;
 }

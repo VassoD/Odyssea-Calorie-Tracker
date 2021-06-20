@@ -2,6 +2,8 @@ import "./Items.css"
 import ItemsList from "./ItemsList.js"
 import Card from "../UI/Card"
 
+
+
 const Items = (props) => {
     // console.log("filtering on", props.filterDate)
     const date = new Date(props.filterDate)
@@ -16,8 +18,9 @@ const Items = (props) => {
     return (
         <Card className="items">
             <ItemsList data={filteredItems}/>
-        </Card>
+        </Card>   
     )
+    
 }
 
 export default Items
