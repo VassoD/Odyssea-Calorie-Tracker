@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0.5rem;
     margin: 1rem 0;
-    background-color: #21B6A8;
+    /* background-color: #21B6A8; */
     border-radius: 20px;
     margin: 0.5rem 1rem;
 }
@@ -22,20 +22,14 @@
     padding: 0 1rem;
 }
 
-.item h3 {
-    font-size: 1rem;
-    flex: 1;
-    color: #116530;    ;
-    margin: 0px;
-}
 .item h4 {
     font-size: 1rem;
     flex: 1;
-    color: white;
+    color: rgb(24, 24, 24); 
     margin: 0px;
-    align-items:end;
-
+    font-weight: 800;
 }
+
 
 .item__calories {
     font-size: 1rem;

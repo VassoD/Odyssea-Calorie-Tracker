@@ -10,7 +10,7 @@ const AddItem = (props) => {
         // console.log("enter a new meal", metric)
         const mandatoryValue = " Please enter your meal's "
         if (item.description.trim().length === 0) {
-            setError(mandatoryValue + " description " )
+            setError(mandatoryValue + " description ")
             return false;
         }
         // if (item.date.trim().input ===) {
@@ -18,11 +18,11 @@ const AddItem = (props) => {
         //     return false;
         // }
         if (item.type.trim().length === 0) {
-            setError(mandatoryValue + " type " )
+            setError(mandatoryValue + " type ")
             return false;
         }
-        if (item.calories.trim().length === 0 ) {
-            setError(mandatoryValue + " calories " )
+        if (item.calories.trim().length === 0) {
+            setError(mandatoryValue + " calories ")
             return false;
         }
 
@@ -37,7 +37,7 @@ const AddItem = (props) => {
 
     return (
         <div className="add-item">
-            {error && <ErrorModal title="An error occured" message={error} onDismiss={onDismissModalHandler}/>}
+            {error && <ErrorModal title="An error occured" message={error} onDismiss={onDismissModalHandler} />}
             <ItemForm onAddItem={addedItemHandler} />
         </div>
     )

@@ -8,19 +8,31 @@ const Items = (props) => {
     // console.log("filtering on", props.filterDate)
     const date = new Date(props.filterDate)
 
-    const filteredItems = props.data.filter( item => {
+    const filteredDescriptionItems = props.filterDescription
+
+    const filteredTypeItems = props.filterType
+
+
+    const deletedItem = (id) => {
+        props.onDelete(id)
+    }
+
+    const filteredDateItems = props.data.filter(item => {
         return (
             item.date.getYear() === date.getYear() &&
             item.date.getMonth() === date.getMonth() &&
-            item.date.getDate() === date.getDate())
+            item.date.getDate() === date.getDate()) ||
+            item.description.includes(filteredDescriptionItems) ||
+            item.type.includes(filteredTypeItems)
     })
+
 
     return (
         <Card className="items">
-            <ItemsList data={filteredItems}/>
-        </Card>   
+            <ItemsList data={filteredDateItems} onDelete={deletedItem} />
+        </Card>
     )
-    
+
 }
 
 export default Items

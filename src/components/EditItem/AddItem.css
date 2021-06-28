@@ -1,5 +1,7 @@
 .add-item {
-    background-color:#A3EBB1;
+    /* background-color:#A3EBB1; */
+    border: 1px solid rgb(112, 175, 60);
+
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -15,10 +17,23 @@
     border-radius: 8px;
   }
   
+  .add-item__actions button{
+    cursor: pointer;
+    border: 3px solid #63a869;
+    border-radius: 8px;
+}
+
   .add-item button:hover,
   .add-item button:active {
-    background-color: #45cc50;
+    background-color: #63a869;
   }
+  
+  .add-item__actions{
+    display: flex;
+    justify-content: center;
+  }
+
+
   
   /* .add-metric button.alternative {
     color: #220131;

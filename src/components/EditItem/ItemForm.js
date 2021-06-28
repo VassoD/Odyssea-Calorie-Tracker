@@ -71,6 +71,7 @@ const ItemForm = (props) => {
                     input={{
                         id: "date",
                         type: "datetime-local",
+                        inputmode: "numeric",
                         value: userDate,
                         onChange: dateChangedHandler
                     }}
@@ -80,29 +81,30 @@ const ItemForm = (props) => {
                     input={{
                         id: "description",
                         type: "text",
+                        placeholder: "Enter the description of your meal",
                         value: userDescription,
                         onChange: descriptionChangedHandler
                     }}
                 />
                 <label>Type<br></br>
-                <select value={userType} onChange={typeChangedHandler}>
-                    <option>Select meal type</option>
-                    <option>Breakfast</option>
-                    <option>Brunch</option>
-                    <option>Lunch</option>
-                    <option>Snack</option>
-                    <option>Dinner</option>
-                </select>
-</label>
+                    <select name="types" value={userType} onChange={typeChangedHandler}>
+                        <option value="" selected disabled hidden>Select type</option>
+                        <option>Breakfast</option>
+                        <option>Brunch</option>
+                        <option>Lunch</option>
+                        <option>Snack</option>
+                        <option>Dinner</option>
+                    </select>
+                </label>
                 <Input className="add-item__element"
                     labelText="Calories"
                     input={{
                         id: "calories",
                         type: "number",
+                        placeholder: "Enter the calories of your meal",
                         value: userCalories,
                         onChange: caloriesChangedHandler,
                         min: "0",
-                        step: "1"
                     }}
                 />
 
