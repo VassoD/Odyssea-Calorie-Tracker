@@ -10,30 +10,47 @@
 }
 
 .item__meal {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    display: flex;  
     gap: 5rem;
     justify-content: space-evenly;
     flex: 1;
+    
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+   
+    
 }
 
 .item__date{
     padding: 0 1rem;
 }
 
+.item h3 {
+    font-size: 1rem;
+    flex: 1;
+    color: #fff; 
+    margin: 0px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #A3EBB1;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: max-content;
+
+}
 .item h4 {
     font-size: 1rem;
     flex: 1;
-    color: rgb(24, 24, 24); 
+    color: #1c5828;
     margin: 0px;
     font-weight: 800;
+    text-align: center;
 }
 
 
 .item__calories {
     font-size: 1rem;
-    font-weight: bold;
     color: white;
     background-color: #A3EBB1;
     padding: 0.5rem;
@@ -41,7 +58,13 @@
     margin:0 1rem;
 }
 
-@media (min-width: 580px) {
+
+.delete__item{
+    background-color:red;
+    padding: 0.5rem;
+    color: #fff;
+}
+/* @media (min-width: 580px) {
     .item__meal {
         flex-direction: row;
         align-items: center;
@@ -57,4 +80,4 @@
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem;
     }
-}
+} */

@@ -39,7 +39,7 @@ const FilterItems = (props) => {
 
                     <label>Type:</label>
                     <select name="types" value={props.userType} onChange={userTypeChangeHandler}>
-                        <option>Seach by type</option>
+                        <option value="">Seach by type</option>
                         <option>Breakfast</option>
                         <option>Brunch</option>
                         <option>Lunch</option>

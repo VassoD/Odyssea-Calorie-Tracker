@@ -12,12 +12,12 @@ const Item = (props) => {
         return <Card className="item">
                 <div className="item__meal">
                         <ItemsDate date={props.date} />
-                        <h4>{props.description}</h4>
-                        <h4>{props.type}</h4>
+                        <h3>{props.description}</h3>
+                        <h4>Type: {props.type}</h4>
                 </div>
-                <div className="item__calories">{dispCalories}</div>
+                <div className="item__calories">Calories: {dispCalories}</div>
                 <div className="add-item__actions">
-                        <button className="delete" onClick={handleDelete} >Delete</button>
+                        <button className="delete__item" onClick={handleDelete} >Delete</button>
                 </div>
         </Card>
 }

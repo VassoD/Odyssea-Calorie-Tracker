@@ -21,8 +21,8 @@ const Items = (props) => {
         return (
             item.date.getYear() === date.getYear() &&
             item.date.getMonth() === date.getMonth() &&
-            item.date.getDate() === date.getDate()) ||
-            item.description.includes(filteredDescriptionItems) ||
+            item.date.getDate() === date.getDate()) &&
+            item.description.includes(filteredDescriptionItems) &&
             item.type.includes(filteredTypeItems)
     })
 
