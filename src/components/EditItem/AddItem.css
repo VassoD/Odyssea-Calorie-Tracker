@@ -1,13 +1,11 @@
 .add-item {
     /* background-color:#A3EBB1; */
-    border: 1px solid rgb(112, 175, 60);
-
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   
   .add-item button {
@@ -19,7 +17,7 @@
   
   .add-item__actions button{
     cursor: pointer;
-    border: 3px solid #63a869;
+    border: 1px solid #63a869;
     border-radius: 8px;
 }
 

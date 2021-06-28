@@ -87,7 +87,7 @@ const ItemForm = (props) => {
                     }}
                 />
                 <label>Type<br></br>
-                    <select name="types" value={userType} onChange={typeChangedHandler}>
+                    <select className="add-item__element" value={userType} onChange={typeChangedHandler}>
                         <option value="" selected disabled hidden>Select type</option>
                         <option>Breakfast</option>
                         <option>Brunch</option>

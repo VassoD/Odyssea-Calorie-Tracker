@@ -6,7 +6,7 @@
     text-align: left;
   }
 
-label{
+.add-item__elements label{
     font-weight: bold;
     color: #fff;
   }
@@ -27,7 +27,9 @@ label{
     border-radius: 6px;
     border: 1px solid rgb(0, 0, 0);
     width: 20rem;
+    margin:0;
   }
+  
 
 
 input::-webkit-outer-spin-button,

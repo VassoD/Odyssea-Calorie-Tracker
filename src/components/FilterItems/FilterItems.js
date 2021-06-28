@@ -31,14 +31,14 @@ const FilterItems = (props) => {
                 <div className="filter-items__element">
                     <p>Filter the items</p>
                 </div>
-                <div className="filter-items__element">
+                <div className="filter-item__elements">
 
                     <label>Description:</label>
-                    <input type="text"
+                    <input type="text" placeholder={"Search by description"}
                         value={props.userDescription} onChange={userDescriptionChangeHandler} />
 
                     <label>Type:</label>
-                    <select name="types" value={props.userType} onChange={userTypeChangeHandler}>
+                    <select value={props.userType} onChange={userTypeChangeHandler}>
                         <option value="">Seach by type</option>
                         <option>Breakfast</option>
                         <option>Brunch</option>
@@ -47,7 +47,7 @@ const FilterItems = (props) => {
                         <option>Dinner</option>
                     </select>
 
-                    <label>Start on</label>
+                    <label> Start on:</label>
                     <input type="date" value={props.startDate} onChange={startDateChangeHandler} />
                 </div>
             </div>

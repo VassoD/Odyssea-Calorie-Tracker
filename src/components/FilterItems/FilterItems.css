@@ -16,13 +16,36 @@
     margin: 1rem 0;
 }
 
-.filter-items__element label {
-    font-weight: bold;
+.filter-items__element p{
+    color: #103016;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 0;
 }
 
-.filter-items__element input {
+.filter-item__elements label {
+    font-weight: 700;
+    color: #fff;
+}
+.filter-item__elements {
+    border: 5px solid #63a869;
+    border-radius: 1rem;
+    padding: 0 0 1rem 1rem;
+}
+
+.filter-item__elements input {
     font: inherit;
     padding: 0.5rem 3rem;
     font-weight: bold;
     border-radius: 6px;
+    margin: 1rem 1rem 0;
+}
+.filter-item__elements select {
+    font: inherit;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 0 1rem;
 }
