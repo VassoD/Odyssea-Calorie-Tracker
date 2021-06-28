@@ -64,7 +64,20 @@
     background-color:red;
     padding: 0.5rem;
     color: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    cursor: pointer;
+
 }
+.delete__item:hover,
+.delete__item:active{
+    background-color: #fff;
+    padding: 0.5rem;
+    color: red;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+
 /* @media (min-width: 580px) {
     .item__meal {
         flex-direction: row;

@@ -1,11 +1,10 @@
 .add-item {
-    /* background-color:#A3EBB1; */
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top:  100px;
   }
   
   .add-item button {
@@ -15,15 +14,19 @@
     border-radius: 8px;
   }
   
-  .add-item__actions button{
+  .add-button{
     cursor: pointer;
-    border: 1px solid #63a869;
+    color: #fff;
+    background-color: #feb236;
     border-radius: 8px;
-}
-
-  .add-item button:hover,
-  .add-item button:active {
-    background-color: #63a869;
+    border: 1px solid #fff;
+  }
+ 
+  .add-button:hover,
+  .add-button:active {
+    background-color:   #45796a;
+    color: #fff;
+    border: 1px solid  #fff;
   }
   
   .add-item__actions{
@@ -31,16 +34,3 @@
     justify-content: center;
   }
 
-
-  
-  /* .add-metric button.alternative {
-    color: #220131;
-    border-color: transparent;
-    background-color: transparent;
-  }
-   */
-   
-  /* .add-metric button.alternative:hover,
-  .add-metric button.alternative:active {
-    background-color: #ff7b25;
-  } */

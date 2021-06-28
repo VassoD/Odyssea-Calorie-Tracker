@@ -3,7 +3,9 @@ import Items from "./components/ItemsList/Items"
 import FilterItems from "./components/FilterItems/FilterItems"
 import { useState } from "react"
 import AddItem from "./components/EditItem/AddItem";
-import NavBar from "./components/NavBar/NavBar";
+import NavBar from "./components/Styling/NavBar";
+import Background from "./components/Styling/Background";
+
 // import Modal from "./components/UI/Modal"
 // import AuthUserContext from "./store/AuthContext"
 // import Login from "./components/Login/Login"
@@ -129,6 +131,7 @@ function App() {
   return (
 
     <div>
+      <Background/>
       <NavBar />
       {/* {authUser == null && <Modal><Login onLogin={onLoginListener} /></Modal>}
       {authUser !== null && <> */}

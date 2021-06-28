@@ -110,7 +110,7 @@ const ItemForm = (props) => {
 
             </div>
             <div className="add-item__actions">
-                <button type="submit">Add item</button>
+                <button className="add-button" type="submit">Add item</button>
             </div>
         </form>
     )
